@@ -1,4 +1,8 @@
 /**
+ * @see https://github.com/xiaweiss/normalize.css
+ */
+
+/**
  * 1. 给页面默认背景色，防止使用 z-index -1 定位元素问题
  * 2. 设置默认字体
  * 3. 设置默认字色，默认 #333
@@ -6,8 +10,9 @@
  * 5. 设置默认文本溢出
  * 5. 消除元素按下时高亮颜色
  */
-html {
+ html {
   background: #FFF;
+  /* background: pink; */
   font-family: system-ui, -apple-system;
   color: #333;
   line-height: 1;
@@ -20,7 +25,7 @@ html {
  * 处理整页填充背景色时，内容不足时，颜色无法填满的问题
  */
 html, body, #app {
-  min-height: 100vh;
+  height: 100%;
 }
 
 /**
@@ -35,6 +40,14 @@ body {
  */
 img {
   display: block;
+}
+
+/**
+ * 默认禁止选中文本
+ */
+div {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /**
