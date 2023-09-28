@@ -6,19 +6,25 @@
  * 1. 给页面默认背景色，防止使用 z-index -1 定位元素问题
  * 2. 设置默认字体
  * 3. 设置默认字色，默认 #333
- * 4. 设置默认字体粗细
- * 5. 设置默认文本溢出
- * 5. 消除元素按下时高亮颜色
+ * 4. 设置默认行高
+ * 5. 设置默认字体粗细
+ * 6. 消除元素按下时高亮颜色
  */
  html {
   background: #FFF;
-  /* background: pink; */
   font-family: system-ui, -apple-system;
   color: #333;
   line-height: 1;
-  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/**
+ * 阻止移动端系统缩放字体
+ */
+body {
+  text-size-adjust: 100%!important;
+  -webkit-text-size-adjust: 100%!important;
 }
 
 /**
@@ -38,7 +44,8 @@ body {
 /**
  * 处理图片底部多占用小块空间问题
  */
-img {
+img,
+svg {
   display: block;
 }
 
@@ -55,4 +62,34 @@ div {
  */
 * {
   box-sizing: border-box;
+}
+
+/**
+ * 所有元素隐藏聚焦时的线框
+ */
+:focus {
+  outline: none;
+}
+
+/**
+ * 去掉 a 默认样式
+ */
+ a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * input 去掉边框
+ */
+input {
+  border: none;
+}
+
+/**
+ * textarea 默认不可拖拽
+ */
+textarea {
+  display: block;
+  resize: none;
 }
