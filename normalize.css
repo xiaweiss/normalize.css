@@ -3,6 +3,14 @@
  */
 
 /**
+ * 设置 css 变量，用于 JS 获取 safeAreaBottom 的值
+ * 获取方法：Number(window.getComputedStyle(document.documentElement).getPropertyValue('--safe-area-bottom').replace('px', '')) || 0
+ */
+:root {
+  --safe-area-bottom: env(safe-area-inset-bottom);
+}
+
+/**
  * 1. 给页面默认背景色，防止使用 z-index -1 定位元素问题
  * 2. 设置默认字体
  * 3. 设置默认字色，默认 #333
