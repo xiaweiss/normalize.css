@@ -2,12 +2,17 @@
  * @see https://github.com/xiaweiss/normalize.css
  */
 
-/**
- * 设置 css 变量，用于 JS 获取 safeAreaBottom 的值
- * 获取方法：Number(window.getComputedStyle(document.documentElement).getPropertyValue('--safe-area-bottom').replace('px', '')) || 0
- */
+
 :root {
+  /**
+   * 设置 css 变量，用于 JS 获取 safeAreaBottom 的值
+   * 获取方法：Number(window.getComputedStyle(document.documentElement).getPropertyValue('--safe-area-bottom').replace('px', '')) || 0
+   */
   --safe-area-bottom: env(safe-area-inset-bottom);
+  /**
+   * 等宽字体 ios-Menlo、android-Monaco、mac-Menlo、windows-Consolas
+   */
+  --font-family-mono: 'Menlo', 'Monaco', 'Consolas', system-ui, -apple-system;
 }
 
 /**
@@ -102,9 +107,10 @@ input {
 }
 
 /**
- * textarea 默认不可拖拽
+ * textarea 默认不可拖拽、字体继承
  */
 textarea {
   display: block;
   resize: none;
+  font-family: inherit;
 }
