@@ -55,10 +55,12 @@ body {
 }
 
 /**
- * 保持图片宽高比
+ * 1. 保持图片宽高比
+ * 2. 禁止图片拖拽
  */
 img {
   object-fit: cover;
+  -webkit-user-drag: none;
 }
 
 /**
