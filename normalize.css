@@ -22,6 +22,7 @@
  * 4. 设置默认行高
  * 5. 设置默认字体粗细
  * 6. 消除元素按下时高亮颜色
+ * 7. 设置光标颜色
  */
 html {
   background: #FFF;
@@ -30,6 +31,7 @@ html {
   line-height: 1;
   -webkit-font-smoothing: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  caret-color: #CC5656;
 }
 
 /**
