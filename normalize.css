@@ -57,6 +57,14 @@ html, body, #app {
 }
 
 /**
+ * 设置 #app 为 flex 布局，方便子元素填满页面高度
+ */
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+/**
  * 清除 body 默认边距
  */
 body {
