@@ -57,11 +57,13 @@ html, body, #app {
 }
 
 /**
- * 设置 #app 为 flex 布局，方便子元素填满页面高度
+ * 1. 设置 #app 为 flex 布局，方便子元素填满页面高度
+ * 2. 设置全局保留空格
  */
 #app {
   display: flex;
   flex-direction: column;
+  white-space: break-spaces;
 }
 
 /**
