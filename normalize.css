@@ -2,7 +2,6 @@
  * @see https://github.com/xiaweiss/normalize.css
  */
 
-
 :root {
   /**
    * 设置 css 变量，用于 JS 获取 safeAreaBottom 的值
@@ -20,6 +19,20 @@
  */
 ::selection {
   background-color: #f5dddd;
+}
+
+/**
+ * 所有元素隐藏聚焦时的线框
+ */
+:focus {
+  outline: none;
+}
+
+/**
+ * 所有元素默认盒模型为 border-box
+ */
+* {
+  box-sizing: border-box;
 }
 
 /**
@@ -42,11 +55,15 @@ html {
 }
 
 /**
- * 阻止移动端系统缩放字体
+ * 1. 清除 body 默认边距
+ * 2. 阻止移动端系统缩放字体
+ * 3. 阻止橡皮筋效果、阻止移动端浏览器下拉刷新
  */
 body {
+  margin: 0;
   text-size-adjust: 100%!important;
   -webkit-text-size-adjust: 100%!important;
+  overscroll-behavior: none;
 }
 
 /**
@@ -64,13 +81,6 @@ html, body, #app {
   display: flex;
   flex-direction: column;
   white-space: break-spaces;
-}
-
-/**
- * 清除 body 默认边距
- */
-body {
-  margin: 0;
 }
 
 /**
@@ -96,20 +106,6 @@ svg {
 div {
   user-select: none;
   -webkit-user-select: none;
-}
-
-/**
- * 所有元素默认盒模型为 border-box
- */
-* {
-  box-sizing: border-box;
-}
-
-/**
- * 所有元素隐藏聚焦时的线框
- */
-:focus {
-  outline: none;
 }
 
 /**
