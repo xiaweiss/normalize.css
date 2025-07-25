@@ -1,0 +1,250 @@
+{
+"fontInfo": {
+"familyName": ""
+},
+"axes": {
+"axes": [
+{
+"name": "weight",
+"label": "weight",
+"tag": "wght",
+"values": [
+100,
+300,
+400,
+500,
+700,
+900
+],
+"defaultValue": 400,
+"mapping": [
+[
+100,
+100
+],
+[
+300,
+300
+],
+[
+400,
+400
+],
+[
+500,
+500
+],
+[
+700,
+700
+],
+[
+900,
+900
+]
+],
+"valueLabels": [
+{
+"name": "Thin",
+"value": 100
+},
+{
+"name": "Light",
+"value": 300
+},
+{
+"name": "Regular",
+"value": 400,
+"linkedValue": 700,
+"elidable": true
+},
+{
+"name": "Medium",
+"value": 500
+},
+{
+"name": "Bold",
+"value": 700
+},
+{
+"name": "Black",
+"value": 900
+}
+]
+}
+]
+},
+"sources": {
+"4dd13227": {
+"name": "Thin",
+"location": {
+"weight": 100
+},
+"lineMetricsHorizontalLayout": {
+"ascender": {
+"value": 750,
+"zone": 16
+},
+"capHeight": {
+"value": 750,
+"zone": 16
+},
+"xHeight": {
+"value": 500,
+"zone": 16
+},
+"descender": {
+"value": -250,
+"zone": -16
+},
+"baseline": {
+"value": 0,
+"zone": -16
+}
+}
+},
+"70ca2799": {
+"name": "Bold",
+"location": {
+"weight": 700
+},
+"lineMetricsHorizontalLayout": {
+"ascender": {
+"value": 750,
+"zone": 16
+},
+"capHeight": {
+"value": 750,
+"zone": 16
+},
+"xHeight": {
+"value": 500,
+"zone": 16
+},
+"descender": {
+"value": -250,
+"zone": -16
+},
+"baseline": {
+"value": 0,
+"zone": -16
+}
+}
+},
+"73637c09": {
+"name": "Medium",
+"location": {
+"weight": 500
+},
+"lineMetricsHorizontalLayout": {
+"ascender": {
+"value": 750,
+"zone": 16
+},
+"capHeight": {
+"value": 750,
+"zone": 16
+},
+"xHeight": {
+"value": 500,
+"zone": 16
+},
+"descender": {
+"value": -250,
+"zone": -16
+},
+"baseline": {
+"value": 0,
+"zone": -16
+}
+}
+},
+"9c9aff2d": {
+"name": "Light",
+"location": {
+"weight": 300
+},
+"lineMetricsHorizontalLayout": {
+"ascender": {
+"value": 750,
+"zone": 16
+},
+"capHeight": {
+"value": 750,
+"zone": 16
+},
+"xHeight": {
+"value": 500,
+"zone": 16
+},
+"descender": {
+"value": -250,
+"zone": -16
+},
+"baseline": {
+"value": 0,
+"zone": -16
+}
+}
+},
+"bde41173": {
+"name": "Black",
+"location": {
+"weight": 900
+},
+"lineMetricsHorizontalLayout": {
+"ascender": {
+"value": 750,
+"zone": 16
+},
+"capHeight": {
+"value": 750,
+"zone": 16
+},
+"xHeight": {
+"value": 500,
+"zone": 16
+},
+"descender": {
+"value": -250,
+"zone": -16
+},
+"baseline": {
+"value": 0,
+"zone": -16
+}
+}
+},
+"e181a268": {
+"name": "Regular",
+"location": {
+"weight": 400
+},
+"lineMetricsHorizontalLayout": {
+"ascender": {
+"value": 750,
+"zone": 16
+},
+"capHeight": {
+"value": 750,
+"zone": 16
+},
+"xHeight": {
+"value": 500,
+"zone": 16
+},
+"descender": {
+"value": -250,
+"zone": -16
+},
+"baseline": {
+"value": 0,
+"zone": -16
+}
+}
+}
+},
+"customData": {
+"fontra.projectGlyphSets": []
+}
+}
